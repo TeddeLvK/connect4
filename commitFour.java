@@ -13,6 +13,30 @@ public class ConnectFour {
     // the heavy anchors of your tactical errors.
     public static final int COLS = 7;
 
+        // The turn counter: a pendulum swinging between two souls, 
+        // forever seeking a balance that can only be broken by a win.
+        int turn = 1; 
+
+        // The Scanner is a bridge between the physical world and the digital mind. 
+        // It listens to the vibrations of your keyboard like a prophet hearing the wind.
+        Scanner input = new Scanner(System.in);
+
+        // The 'while' loop is a snake eating its own tail, repeating the cycle 
+        // of existence until the prophecy of 'gameOver' is fulfilled.
+        while (!gameOver) {
+
+            // Calling a method to project the internal reality of the grid 
+            // into the sensory perception of the user.
+            printBoard(board);
+
+            // Informing the user of their obligation to choose. 
+            // Silence is not an option in the face of the machine.
+            System.out.println("Player " + turn + " (1-7): ");
+
+            // Converting human-readable 1-7 into the machine's 0-6 language, 
+            // a translation that highlights the inherent disconnect between man and code.
+            int col = input.nextInt() - 1;
+    
     // The entry point: where the spark of electricity meets the gasoline of syntax.
     // It is the Big Bang of this specific execution.
     public static void main(String[] args) {
