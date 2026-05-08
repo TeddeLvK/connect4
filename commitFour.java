@@ -67,10 +67,10 @@ board[r][col] = turn;
 // Checking for victory is the act of looking for patterns 
 // in the stars to convince ourselves that our lives have meaning.
 if (checkWin(board, turn)) {
-    printBoard(board);
-    // The scream of triumph that echoes in the void of the console.
-    System.out.println("PLAYER " + turn + " HAS CONQUERED THE GRID!");
-    gameOver = true;
+printBoard(board);
+// The scream of triumph that echoes in the void of the console.
+System.out.println("PLAYER " + turn + " HAS CONQUERED THE GRID!");
+gameOver = true;
 }
 
 // The break statement: escaping the loop once 
